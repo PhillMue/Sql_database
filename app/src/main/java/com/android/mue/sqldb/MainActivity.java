@@ -1,6 +1,7 @@
 package com.android.mue.sqldb;
 
 import android.app.Activity;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,11 @@ public class MainActivity extends Activity {
     }
     public void display(View v)
     {
+        //use cursor to keep all data
+        //cursor can keep data of any data type
+        Cursor c=db.rawQuery("select * from mytable", null);
+        tv.setText("");
+    }
 
 
     }
