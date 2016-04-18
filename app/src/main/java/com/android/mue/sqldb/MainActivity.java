@@ -29,6 +29,8 @@ public class MainActivity extends Activity {
         String sur_name=et2.getText().toString();
         et1.setText("");
         et2.setText("");
+        db.execSQL("insert into mytable values('"+name+"','"+sur_name+"')");
+
 
     }
 }
