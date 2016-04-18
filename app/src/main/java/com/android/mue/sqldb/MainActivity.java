@@ -52,9 +52,8 @@ public class MainActivity extends Activity {
             String surname=c.getString(1);
             //display on text view
             tv.append("Name:"+name+" and SurName:"+surname+"\n");
-        }
+            //move next position until end of the data
+        }while(c.moveToNext());
     }
-
-
-    }
+}
 
