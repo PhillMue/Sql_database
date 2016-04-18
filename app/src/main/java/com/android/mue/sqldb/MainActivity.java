@@ -50,6 +50,8 @@ public class MainActivity extends Activity {
             //or we can get data using column index
             String name=c.getString(c.getColumnIndex("name"));
             String surname=c.getString(1);
+            //display on text view
+            tv.append("Name:"+name+" and SurName:"+surname+"\n");
         }
     }
 
