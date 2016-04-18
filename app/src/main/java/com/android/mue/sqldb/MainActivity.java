@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     SQLiteDatabase db;
@@ -30,6 +31,9 @@ public class MainActivity extends Activity {
         et1.setText("");
         et2.setText("");
         db.execSQL("insert into mytable values('"+name+"','"+sur_name+"')");
+        //display Toast
+        Toast.makeText(this, "values inserted successfully.", Toast.LENGTH_LONG).show();
+    }
 
 
     }
