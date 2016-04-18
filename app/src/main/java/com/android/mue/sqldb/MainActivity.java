@@ -18,5 +18,7 @@ public class MainActivity extends Activity {
         tv=(TextView)findViewById(R.id.textView1);
         et1=(EditText)findViewById(R.id.editText1);
         et2=(EditText)findViewById(R.id.editText2);
+        db= openOrCreateDatabase("Mydb", MODE_PRIVATE, null);
+
     }
 }
