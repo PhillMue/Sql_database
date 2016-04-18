@@ -3,6 +3,7 @@ package com.android.mue.sqldb;
 import android.app.Activity;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -22,6 +23,12 @@ public class MainActivity extends Activity {
         //create new table if not already exist
         db.execSQL("create table if not exists mytable(name varchar, sur_name varchar)");
     }
+    public void insert(View v)
+    {
+        String name=et1.getText().toString();
+        String sur_name=et2.getText().toString();
+        et1.setText("");
+        et2.setText("");
 
     }
 }
