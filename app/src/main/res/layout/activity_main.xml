@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
-        android:hint="Sur Name"
+        android:hint="Sir Name"
         android:maxLines="1"
         android:ems="10" />
     <Button
