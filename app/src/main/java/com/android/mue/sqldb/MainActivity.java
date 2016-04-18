@@ -41,6 +41,11 @@ public class MainActivity extends Activity {
         //cursor can keep data of any data type
         Cursor c=db.rawQuery("select * from mytable", null);
         tv.setText("");
+        //move cursor to first position
+        c.moveToFirst();
+        //fetch all data one by one
+        do
+        {
     }
 
 
