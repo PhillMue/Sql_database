@@ -14,5 +14,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //initialize all view objects
+        tv=(TextView)findViewById(R.id.textView1);
+        et1=(EditText)findViewById(R.id.editText1);
+        et2=(EditText)findViewById(R.id.editText2);
     }
 }
