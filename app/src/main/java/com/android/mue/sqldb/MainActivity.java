@@ -34,7 +34,9 @@ public class MainActivity extends Activity {
         //display Toast
         Toast.makeText(this, "values inserted successfully.", Toast.LENGTH_LONG).show();
     }
+    public void display(View v)
+    {
 
 
     }
-}
+
