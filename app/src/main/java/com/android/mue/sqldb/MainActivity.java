@@ -19,6 +19,9 @@ public class MainActivity extends Activity {
         et1=(EditText)findViewById(R.id.editText1);
         et2=(EditText)findViewById(R.id.editText2);
         db= openOrCreateDatabase("Mydb", MODE_PRIVATE, null);
+        //create new table if not already exist
+        db.execSQL("create table if not exists mytable(name varchar, sur_name varchar)");
+    }
 
     }
 }
