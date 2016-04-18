@@ -46,6 +46,11 @@ public class MainActivity extends Activity {
         //fetch all data one by one
         do
         {
+            //we can use c.getString(0) here
+            //or we can get data using column index
+            String name=c.getString(c.getColumnIndex("name"));
+            String surname=c.getString(1);
+        }
     }
 
 
